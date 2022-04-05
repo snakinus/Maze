@@ -36,7 +36,7 @@ class Maze {
 		return (1 <= y && y < N - 1) && (1 <= x && x < M - 1);
 	}
 
-	// 
+	// returns true if all neighbours except father are borders or unvisited
 	bool validSurroundings(int y, int x, int prevY, int prevX) {
 		if (visited[y][x]) return false;
 

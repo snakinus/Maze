@@ -34,9 +34,7 @@ public:
 	// deletes dynamically allocated variables 
 	// (deleting players from vector is not necessary, becuase there are only ai or/and human in it)
 	~Game() {
-		delete human;
-		delete ai;
-		delete maze;
+		for (auto player : players) delete player;
 	}
 
 	// adding human or/and AI depending on mode and starting a game

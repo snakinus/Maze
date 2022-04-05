@@ -1,4 +1,9 @@
-﻿#include "Game.h"
+﻿/*
+	Maze made by Stanisław Gutowski
+*/
+
+
+#include "Game.h"
 #include "Menu.h"
 #include <iostream>
 #include <string>
@@ -89,9 +94,9 @@ int main() {
 	nonl();
 	keypad(stdscr, TRUE);
 	noecho();
-	curs_set(0);
 	nodelay(stdscr, TRUE);
 	timeout(0);
+	curs_set(0);
 
 	// init colors
 	init_colors();
